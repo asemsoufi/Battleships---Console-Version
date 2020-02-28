@@ -61,18 +61,18 @@ public class Grid {
                         }
                     }
                     break;
-                case "DISTROYER":
+                case "DESTROYER":
                     for(int i = 1; i<=Integer.parseInt(aShip[1]); i++){
                         double rand = Math.random();
                         if(rand >0.5){
                             // create and place Destroyer horizontally
-                            Ship dis = new Destroyer(getCellsHorizontal(2));
-                            ships.add(dis);
+                            Ship des = new Destroyer(getCellsHorizontal(2));
+                            ships.add(des);
                             //mainGrid.markShip(dis);
                         } else{
                             // create and place Destroyer vertically
-                            Ship dis = new Destroyer(getCellsVertical(2));
-                            ships.add(dis);
+                            Ship des = new Destroyer(getCellsVertical(2));
+                            ships.add(des);
                             //mainGrid.markShip(dis);
                         }
                     }
@@ -169,7 +169,7 @@ public class Grid {
             } else if (ship instanceof Cruiser) {
                 cells.set(cells.indexOf(shipCell), "CRU");
             } else if (ship instanceof Destroyer) {
-                cells.set(cells.indexOf(shipCell), "DIS");
+                cells.set(cells.indexOf(shipCell), "DES");
             } else if (ship instanceof Submarine) {
                 cells.set(cells.indexOf(shipCell), "SUB");
             }
