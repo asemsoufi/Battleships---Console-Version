@@ -68,12 +68,12 @@ public class Grid {
                             // create and place Destroyer horizontally
                             Ship des = new Destroyer(getCellsHorizontal(2));
                             ships.add(des);
-                            //mainGrid.markShip(dis);
+                            //mainGrid.markShip(des);
                         } else{
                             // create and place Destroyer vertically
                             Ship des = new Destroyer(getCellsVertical(2));
                             ships.add(des);
-                            //mainGrid.markShip(dis);
+                            //mainGrid.markShip(des);
                         }
                     }
                     break;
@@ -220,8 +220,8 @@ public class Grid {
                     case "CRU":
                         System.out.print(" CRU |");
                         break;
-                    case "DIS":
-                        System.out.print(" DIS |");
+                    case "DES":
+                        System.out.print(" DES |");
                         break;
                     case "SUB":
                         System.out.print(" SUB |");
